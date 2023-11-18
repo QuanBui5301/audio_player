@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    position: relative;
+    display: flex;
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, #27023a, #9a0fe0);
+}
+.main #logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 27px;
+    color: white;
+}
+.right, .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+.left img {
+    height: 250px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 0px 20px 12px rgba(240, 240, 240, 0.2);
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 2px;
+    margin: 0 15px;
+}
+input[type='range']::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #b659e5;
+    border-radius: 50%;
+}
+.left .volume {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.left .volume p {
+    font-size: 20px;
+}
+.left .volume i {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 15px;
+    background: #a272a2;
+    font-size: 25px;
+}
+.left .volume i:hover {
+    background: #b659e5;
+}
+.volume #volume_show {
+    padding: 8px 12px;
+    margin: 0 5px 0 0;
+    background: #b659e5;
+    border-radius: 50%;
+}
+.right .middle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .middle button{
+    border: none;
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    background: #b659e5;
+}
+.right button:hover{
+    background: #3c0359;
+    font-size: 80%;
+}
+.right #title {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    color: white;
+    font-size: 25px;
+}
+.right #artist{
+    position: absolute;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    top: 110px;
+    left: 50%;
+    color: lightblue;
+    font-size: 18px;
+}
+.right .show_song{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 30px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 25px 5px;
+    color: white;
+    background: #b659e5;
+    border-radius: 20px;
+}
+.right #auto{
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    padding: 8px 10px;
+    color: #ffffff;
+    background: #a272a2;
+    outline: none;
+    border-radius: 10px;
+}
+.right #auto:hover {
+    background: #9a0fe0;
+}
+.right .duration{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    margin-top: 40px;
+}
