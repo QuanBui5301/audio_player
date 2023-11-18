@@ -163,7 +163,7 @@ function prevSong() {
         playAndPause()
     }
     else {
-        index_song = 2
+        index_song = listSong.length-1
         loadSong(index_song)
         playSong = false
         playAndPause()
